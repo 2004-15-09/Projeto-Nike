@@ -5,21 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike Alexandre D. Gomes</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="imagens/logo.png" alt="Logo-Nike">
+    <img src="imagens/logo.png" alt="Logo-Nike" class="logo">
 
-    <h4>R$799,90</h4>
+    <div class="caixa-principal">
 
-    <h1>Nike Air Zoom</h1>
+        <div class="caixa-texto">
+            <h4>R$799,90</h4>
+            <h1>Nike Air Zoom</h1>
+            <p>
+                Uma passada elástica para qualquer corrida, a sensação familiar e perfeita do Peg retorna para ajudá-lo a atingir seus objetivos. Esta versão tem a mesma capacidade  de resposta e suporte neutro que você adora, mas com melhor conforto nas áreas sensíveis do seu pé, como o arco e os dedos.
+            </p>
+            <a class="botao-carinho">
+                Adicionar ao carrinho
+            </a>
+        </div>
 
-    <p>
-        Uma passada elástica para qualquer corrida, a sensação familiar e perfeita do Peg retorna para ajudá-lo a atingir seus objetivos. Esta versão tem a mesma capacidade  de resposta e suporte neutro que você adora, mas com melhor conforto nas áreas sensíveis do seu pé, como o arco e os dedos.
-    </p>
+        <div class="caixa-imagem">
+            <img src="imagens/nike1.png" class="imagem-tenis">
+        </div>
 
-    <a>
-        Adicionar ao carrinho 
-    </a>
+    </div>
+
+    <div class="caixa-botoes">
+        <div onclick="mudarVisual('#cef361', 'imagens/nike1.png')" class="botoes verde"></div>
+        <div onclick="mudarVisual('#ff9eb5', 'imagens/nike3.png')" class="botoes rosa"></div>
+        <div onclick="mudarVisual('#58cced', 'imagens/nike2.png')" class="botoes azul"></div>
+    </div>
 
 </body>
+<script src="script.js"></script>
 </html>
