@@ -35,18 +35,29 @@ body::after {
 
 .logo {
     width: 80px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transform: translate(900%, -50%);
+    z-index: 2;
+}
+
+.logo img {
+    width: 100%;
+    background-color: #58cced;
+    border-radius: 50%;
 }
 
 h4 {
-    font-size: 30px;
+    font-size: 27px;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 70px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 40px;
 }
 
@@ -67,6 +78,13 @@ p {
 .imagem-tenis {
     width: 800px;
     transform: rotate(-25deg);
+    filter: drop-shadow(30px 45px 40px #161616);
+    transition: 1s;
+}
+
+.troca-efeito {
+    opacity: 0;
+    transform: rotate(-25deg) translateY(-30px );
 }
 
 .caixa-principal {
@@ -85,6 +103,8 @@ p {
 .caixa-botoes {
     position: relative;
     display: flex;
+    margin-top: 10px;
+    padding-top: 10px;
     gap: 15px; /* Espaçamento entre os botões */
     z-index: 2;
 }
